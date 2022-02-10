@@ -1,7 +1,7 @@
 import React from 'react';
 import "./app.less"
-import {BrowserRouter, Route} from "react-router-dom";
-import Main from "./main/Main";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Main from "./main/Main.jsx";
 
 const App = () => {
     /*const dispatch = useDispatch();
@@ -11,7 +11,10 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className="container">
-                <Route path='/' component={Main}/>
+                {/*<Routes>
+                    <Route path='/' component={Main}/>
+                </Routes>*/}
+                <Main/>
             </div>
         </BrowserRouter>
     );
